@@ -1,3 +1,13 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url("fonts/Barlow-Light.ttf");
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -5,20 +15,39 @@ body {
     background-color: darkslategray;
 }
 .picture{
-    width: 100%;
-    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 .text-area {
     background-color: white;
 }
+.small-title{
+    text-align: left;
+    margin: auto 20% 0 15%;
+    font-family: myFirstFont, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.small-text{
+    text-align: left;
+    margin: auto 10% auto 15%;
+    font-family: mySecondFont, sans-serif;
+    font-size: 20px;
+}
+.small-btn{
+    text-align: left;
+    margin: 0 20% auto 15%;
+    font-family: myFirstFont, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+}
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(7, minmax(0, 1fr));
-
 }
-
 .orange-pic-area {
     grid-row: 1;
     grid-column: 1 / 5;
@@ -26,6 +55,17 @@ body {
 .transform-company-area {
     grid-row: 2;
     grid-column: 1 / 3;
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+}
+.transform-your-brand-title{
+    grid-row: 1;
+}
+.transform-your-brand-text{
+    grid-row: 2;
+}
+.transform-your-brand-btn{
+    grid-row: 3;
 }
 .egg-pic-area {
     grid-row: 2;
@@ -38,6 +78,17 @@ body {
 .stand-out-area {
     grid-row: 3;
     grid-column: 3 / 5;
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+}
+.stand-out-area-title{
+    grid-row: 1;
+}
+.stand-out-area-text{
+    grid-row: 2;
+}
+.stand-out-area-btn{
+    grid-row: 3;
 }
 .cherry-pic-area {
     grid-row: 4;
@@ -50,6 +101,44 @@ body {
 .client-testimonials-area {
     grid-row: 5;
     grid-column: 1 / 5;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.client-testimonials-area-title{
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+.client-testimonials-area-person{
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+}
+.Emily{
+    grid-column: 1;
+}
+.Thomas{
+    grid-column: 2;
+}
+.Jennie{
+    grid-column: 3;
+}
+.client-testimonials-area-person-photo{
+    grid-row: 1;
+}
+.client-testimonials-area-person-text{
+    grid-row: 2;
+}
+.client-testimonials-area-person-credentials{
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.client-testimonials-area-person-credentials-name{
+    grid-row: 1;
+}
+.client-testimonials-area-person-credentials-position{
+    grid-row: 2;
 }
 .milk-bottle-pic-area {
     grid-row: 6;
